@@ -1,6 +1,7 @@
 import useInterval from "./useInterval"
 // import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+// import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AnimatePresence } from "motion/react";
 import { motion } from "framer-motion";
 import { useState, Suspense } from "react";
@@ -36,8 +37,8 @@ function CarruselContent() {
           src={carruselImg[count]} width="2000" height="10" alt={`Carrusel ${count}`} />
       </AnimatePresence>
       <div className="absolute inset-0">
-        <button onClick={prevImage}><FaArrowAltCircleLeft className="size-12 max-[400px]:size-7 text-white hover:text-black hover:stroke-white stroke-black stroke-20 absolute left-3 top-[45%]" /></button>
-        <button onClick={nextImage}><FaArrowAltCircleRight className="size-12 max-[400px]:size-7 text-white hover:text-black hover:stroke-white stroke-black stroke-20 absolute right-3 top-[45%]"/></button>
+        <button onClick={prevImage}><IoIosArrowBack className="size-12 max-[400px]:size-7 text-white hover:text-black hover:stroke-white stroke-black stroke-20 absolute left-3 top-[45%]" /></button>
+        <button onClick={nextImage}><IoIosArrowForward className="size-12 max-[400px]:size-7 text-white hover:text-black hover:stroke-white stroke-black stroke-20 absolute right-3 top-[45%]"/></button>
       </div>
       <div id="indicador" className="absolute bottom-4 w-full flex justify-center">
         {
