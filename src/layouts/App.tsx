@@ -1,4 +1,5 @@
 import Carrusel from "../components/Carrusel/Carrusel"
+import Contactos from "../ui/Contactos"
 
 function App() {
   return (
@@ -16,12 +17,22 @@ function App() {
         </div>
         <div className="flex flex-col items-center">
           <h1 className="bg-blue-950 text-white text-center font-bold text-2xl p-3 w-full">Video</h1>
-          <Carrusel />
+          <iframe 
+            className="w-full h-[500px] max-w-[700px] py-5" 
+            src="https://www.youtube.com/embed/MPkSITpHpfQ" 
+            title="YouTube video player" 
+            // frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen>
+          </iframe>
 
         </div>
       </main>
-      <footer className=" py-2">
+      <footer className="">
         <h1 className="bg-blue-300 text-center text-2xl font-bold p-3">Redes sociales</h1>
+        <section id='contacts'>
+          <Contactos />
+        </section>
       </footer>
     </>
   )
