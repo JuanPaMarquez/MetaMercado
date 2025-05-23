@@ -1,5 +1,5 @@
 import Carrusel from "../components/Carrusel/Carrusel"
-import Contactos from "../ui/Contactos"
+import Social from "../ui/Social"
 
 function App() {
   return (
@@ -33,10 +33,8 @@ function App() {
         </div>
       </main>
       <footer className="">
-        <h1 className="bg-blue-300 text-center text-2xl font-bold p-3">Redes sociales</h1>
-        <section id='contacts'>
-          <Contactos />
-        </section>
+        <h1 className="bg-blue-300 text-center text-3xl font-bold p-3">CONTACTANOS</h1>
+        <Social />
       </footer>
     </>
   )
