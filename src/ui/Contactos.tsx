@@ -5,8 +5,7 @@ export default function Contactos() {
   console.log(creadores)
   return (
     <div className='contactos'>
-      <h2>Quienes Somos:</h2>
-      <p>Somos estudiantes de la Universidad de Pamplona presentando este proyecto de ciencia de datos. </p>
+      <p>Somos estudiantes de la Universidad de Pamplona presentando nuestro emprendimiento. </p>
       {
         creadores.map((persona, index) => {
           return (
