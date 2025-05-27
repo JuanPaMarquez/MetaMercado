@@ -130,7 +130,7 @@ const CustomWheel = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="text-center mb-8 bg-purple-800 w-full py-3 flex items-center justify-center">
-        <h1 className="text-5xl font-bold drop-shadow-lg text-white w-full">
+        <h1 className="text-2xl font-bold drop-shadow-lg text-white w-full">
           🎰 Ruleta de la Suerte
         </h1>
       </div>
@@ -139,8 +139,8 @@ const CustomWheel = () => {
         {/* Ruleta */}
         <div className="relative">
           {/* Indicador */}
-          <div className="absolute right-[-15px] top-1/2 rotate-270 z-10">
-            <div className="w-0 h-0 border-l-10 border-r-10 border-b-20 border-l-transparent border-r-transparent border-b-yellow-400 drop-shadow-lg"></div>
+          <div className="absolute rotate-90 max-[410px]:left-[calc(53%)] max-[410px]:top-[calc(50%-10px)] min-[410px]:right-[-15px] min-[410px]:top-1/2 min-[410px]:rotate-270 z-10">
+            <div className="w-0 h-0 border-l-10 border-r-10 border-b-20 border-l-transparent border-r-transparent border-[#333] drop-shadow-lg"></div>
           </div>
           
           {/* Ruleta SVG */}
@@ -151,12 +151,12 @@ const CustomWheel = () => {
           >
             <svg 
               viewBox="0 0 400 400" 
-              className="drop-shadow-2xl w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"
+              className="drop-shadow-2xl w-full h-full min-[400px]:w-96 min-[400px]:h-96 lg:w-[500px] lg:h-[500px]"
             >
               <circle cx="200" cy="200" r="190" fill="#fff" stroke="#333" strokeWidth="4"/>
               {createWheelSVG()}
               <circle cx="200" cy="200" r="20" fill="#333"/>
-              <circle cx="200" cy="200" r="15" fill="#fff"/>
+              <circle cx="200" cy="200" r="15" fill="#333"/>
               <circle cx="200" cy="200" r="8" fill="#333"/>
             </svg>
           </div>
