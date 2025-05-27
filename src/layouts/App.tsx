@@ -1,4 +1,5 @@
 import Carrusel from "../components/Carrusel/Carrusel"
+import Ruleta from "../ui/Ruleta"
 import Social from "../ui/Social"
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <div className="flex justify-center">
           <Carrusel />
         </div>
+        <Ruleta />
         <div className="flex flex-col items-center" >    
           <h1 className="bg-blue-500 text-center font-bold text-2xl p-3 w-full">Descripcion</h1>
           <p className="text-justify max-w-[700px] text-lg py-5 px-3"><span className="font-bold">MetaMercado</span> es un pagina creada para apoyar a los emprendimientos en sus inicios, ayudando a los emprendedores a llegar al mercado digital. En esta plataforma queremos dar apoyo directo a todo tipo de empresa que busca digitalizar su negocio.</p>
