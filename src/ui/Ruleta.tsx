@@ -135,7 +135,7 @@ const CustomWheel = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col items-center space-y-8">
+      <div className="flex flex-col items-center">
         {/* Ruleta */}
         <div className="relative">
           {/* Indicador */}
@@ -149,7 +149,10 @@ const CustomWheel = () => {
             className="transform transition-transform duration-[3000ms] ease-out"
             style={{ transform: `rotate(${rotation}deg)` }}
           >
-            <svg width="400" height="400" className="drop-shadow-2xl">
+            <svg 
+              viewBox="0 0 400 400" 
+              className="drop-shadow-2xl w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px]"
+            >
               <circle cx="200" cy="200" r="190" fill="#fff" stroke="#333" strokeWidth="4"/>
               {createWheelSVG()}
               <circle cx="200" cy="200" r="20" fill="#333"/>
