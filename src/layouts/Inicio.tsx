@@ -1,9 +1,8 @@
 import Carrusel from "../components/Carrusel/Carrusel"
-import Ruleta from "../ui/Ruleta"
 import Social from "../ui/Social"
 import { useState, useEffect, useRef} from "react";
 
-function App() {
+function Inicio() {
 
   const [mostrar, setMostrar] = useState(false);
     const divRef = useRef<HTMLDivElement>(null);
@@ -41,7 +40,6 @@ function App() {
         <div className="flex justify-center">
           <Carrusel />
         </div>
-        <Ruleta />
         <div className="flex flex-col items-center" >    
           <h1 className="bg-gradient-to-r from-blue-500  text-center font-bold text-2xl p-3 w-full">Descripcion</h1>
             <div ref={divRef} className={`bg-blue-100 hover:bg-blue-300 transition-opacity my-5 px-3 rounded-4xl shadow-lg hover:shadow-2xl duration-700 transform hover:scale-105  ${mostrar ? ' opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -69,4 +67,4 @@ function App() {
   )
 }
 
-export default App
+export default Inicio;
