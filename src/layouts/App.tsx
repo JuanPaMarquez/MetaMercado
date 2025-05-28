@@ -44,7 +44,7 @@ function App() {
         <Ruleta />
         <div className="flex flex-col items-center" >    
           <h1 className="bg-gradient-to-r from-blue-500  text-center font-bold text-2xl p-3 w-full">Descripcion</h1>
-            <div ref={divRef} className={`bg-blue-100 hover:bg-blue-300 transition-opacity my-5 px-3 rounded-4xl shadow-lg hover:shadow-2xl duration-300 transform hover:scale-105  ${mostrar ? ' opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div ref={divRef} className={`bg-blue-100 hover:bg-blue-300 transition-opacity my-5 px-3 rounded-4xl shadow-lg hover:shadow-2xl duration-700 transform hover:scale-105  ${mostrar ? ' opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <p className="text-justify max-w-[500px] text-lg py-5 px-3"><span className="font-bold">MetaMercado</span> es un pagina creada para apoyar a los emprendimientos en sus inicios, ayudando a los emprendedores a llegar al mercado digital. En esta plataforma queremos dar apoyo directo a todo tipo de empresa que busca digitalizar su negocio.</p>
             </div>
         </div>
