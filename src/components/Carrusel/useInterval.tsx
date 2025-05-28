@@ -8,7 +8,7 @@ export default function useInterval() {
   const startInterval = () => {
     const id = setInterval(() => {
       setCount((prevCount) => (prevCount === carruselImg.length - 1 ? 0 : prevCount + 1));
-    }, 10000);
+    }, 7000);
     setIntervalId(id);
   };
 

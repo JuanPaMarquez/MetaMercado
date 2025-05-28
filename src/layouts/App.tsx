@@ -1,8 +1,33 @@
 import Carrusel from "../components/Carrusel/Carrusel"
 import Ruleta from "../ui/Ruleta"
 import Social from "../ui/Social"
+import { useState, useEffect, useRef} from "react";
 
 function App() {
+
+  const [mostrar, setMostrar] = useState(false);
+    const divRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+    const handleScroll = () => {
+      if (!divRef.current) return;
+
+      const elementTop = divRef.current.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      // console.log("elementTop", elementTop);
+      // console.log("windowHeight", windowHeight);
+
+      if (elementTop < (windowHeight - 150)) {
+        setMostrar(true); // Se activa cuando el div entra en la vista
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Ejecutar también al montar
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <nav className="text-center bg-blue-300 py-2">
@@ -18,11 +43,13 @@ function App() {
         </div>
         <Ruleta />
         <div className="flex flex-col items-center" >    
-          <h1 className="bg-blue-500 text-center font-bold text-2xl p-3 w-full">Descripcion</h1>
-          <p className="text-justify max-w-[700px] text-lg py-5 px-3"><span className="font-bold">MetaMercado</span> es un pagina creada para apoyar a los emprendimientos en sus inicios, ayudando a los emprendedores a llegar al mercado digital. En esta plataforma queremos dar apoyo directo a todo tipo de empresa que busca digitalizar su negocio.</p>
+          <h1 className="bg-gradient-to-r from-blue-500  text-center font-bold text-2xl p-3 w-full">Descripcion</h1>
+            <div ref={divRef} className={`bg-blue-100 hover:bg-blue-300 transition-opacity my-5 px-3 rounded-4xl shadow-lg hover:shadow-2xl duration-300 transform hover:scale-105  ${mostrar ? ' opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <p className="text-justify max-w-[500px] text-lg py-5 px-3"><span className="font-bold">MetaMercado</span> es un pagina creada para apoyar a los emprendimientos en sus inicios, ayudando a los emprendedores a llegar al mercado digital. En esta plataforma queremos dar apoyo directo a todo tipo de empresa que busca digitalizar su negocio.</p>
+            </div>
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="bg-blue-950 text-white text-center font-bold text-2xl p-3 w-full">Video</h1>
+          <h1 className="bg-gradient-to-l from-blue-950 text-center font-bold text-2xl p-3 w-full">Video</h1>
           <iframe 
             className="w-full h-[500px] max-w-[700px]" 
             src="https://www.youtube.com/embed/MPkSITpHpfQ" 

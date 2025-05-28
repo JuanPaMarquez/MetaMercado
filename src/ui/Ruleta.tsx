@@ -51,7 +51,7 @@ const CustomWheel = () => {
       const normalizedAngle = (360 - (totalRotation % 360)) % 360;
       let currentAngle = 0;
       
-      for (let segment of segments) {
+      for (const segment of segments) {
         currentAngle += segment.angle;
         if (normalizedAngle <= currentAngle) {
           setResult(segment.text);
@@ -129,8 +129,8 @@ const CustomWheel = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="text-center mb-8 bg-purple-800 w-full py-3 flex items-center justify-center">
-        <h1 className="text-2xl font-bold drop-shadow-lg text-white w-full">
+      <div className="text-center mb-8 bg-gradient-to-l from-purple-800 w-full py-3 flex items-center justify-center">
+        <h1 className="text-2xl font-bold drop-shadow-lg w-full">
           🎰 Ruleta de la Suerte
         </h1>
       </div>
