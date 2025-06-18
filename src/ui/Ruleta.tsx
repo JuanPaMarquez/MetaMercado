@@ -1,3 +1,4 @@
+import confetti from 'canvas-confetti';
 import { useState, useRef } from 'react';
 
 const CustomWheel = () => {
@@ -55,6 +56,7 @@ const CustomWheel = () => {
         currentAngle += segment.angle;
         if (normalizedAngle <= currentAngle) {
           setResult(segment.text);
+          confetti()
           document.body.style.overflowY = "hidden";
           break;
         }
