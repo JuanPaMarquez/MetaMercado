@@ -12,12 +12,12 @@ export const codigo = [
   {
     id: "meta-9876",
     url: "https://freseame.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-1122",
     url: "https://mildelicias.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-1123",
