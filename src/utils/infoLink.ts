@@ -2,7 +2,7 @@ export const codigo = [
   {
     id: "meta-1356",
     url: "https://colombia-en-un-sabor.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-1357",
@@ -22,7 +22,7 @@ export const codigo = [
   {
     id: "meta-1123",
     url: "https://mildelicias.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-5566",
@@ -32,17 +32,17 @@ export const codigo = [
   {
     id: "meta-5766",
     url: "https://obleamia.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-6655",
     url: "https://crepas-dulces.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-4444",
     url: "https://dulce-wella.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-5555",
