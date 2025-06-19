@@ -17,7 +17,7 @@ export const codigo = [
   {
     id: "meta-1122",
     url: "https://mildelicias.vercel.app/",
-    active: true
+    active: false // ya lo reclamo
   },
   {
     id: "meta-1123",
