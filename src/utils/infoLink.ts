@@ -47,6 +47,6 @@ export const codigo = [
   {
     id: "meta-5555",
     url: "https://dely-sweets.vercel.app/",
-    active: true
+    active: false // ya lo reclamo
   }
 ];
