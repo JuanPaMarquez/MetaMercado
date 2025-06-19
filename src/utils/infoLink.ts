@@ -7,7 +7,7 @@ export const codigo = [
   {
     id: "meta-1357",
     url: "https://colombia-en-un-sabor.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-9876",
@@ -27,7 +27,7 @@ export const codigo = [
   {
     id: "meta-5566",
     url: "https://obleamia.vercel.app/",
-    active: false
+    active: true
   },
   {
     id: "meta-5766",
