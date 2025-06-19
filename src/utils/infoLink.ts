@@ -27,7 +27,7 @@ export const codigo = [
   {
     id: "meta-5566",
     url: "https://obleamia.vercel.app/",
-    active: true
+    active: false
   },
   {
     id: "meta-5766",
